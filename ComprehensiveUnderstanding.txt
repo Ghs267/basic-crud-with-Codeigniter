@@ -1,0 +1,16 @@
+1.
+a. base_url untuk mengembalikan nilai site URL, tanpa mengappend index page
+b. site_url untuk mengembalikan nilai site URL dengan mengappend index page
+c. current_url untuk mengembalikan URL page yang sedang diview secara lengkap 
+d. previous_url untuk mengembalikan halaman URL sebelumnya yang diakses user
+e. index_page untuk mengembalikan index page website kita
+
+2.
+a. Melakukan konfigurasi pada bagian application/config/database.php
+b. Melakukan konfigurasi autoload dengan menambahkan hal ini 
+$autoload['libraries'] = array('database');
+c. Menambahkan baris berikut
+$db = \Config\Database::connect();
+untuk mengoneksi database
+
+3. Autoload configuration berguna untuk mengatur fungsi-fungsi yang akan dimuat otomatis di awal ketika program dijalankan.
